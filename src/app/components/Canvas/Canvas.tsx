@@ -35,13 +35,14 @@ const Canvas: React.FC = () => {
   // }
 
   const handleNoteClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    event.preventDefault()
     const { id } = event.currentTarget.dataset
     console.log(`Note with id ${id} was clicked!`)
   }
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    event.preventDefault()
     if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault() // Prevent default to avoid scrolling on Space key
       handleNoteClick(event as unknown as React.MouseEvent<HTMLDivElement>)
     }
   }
