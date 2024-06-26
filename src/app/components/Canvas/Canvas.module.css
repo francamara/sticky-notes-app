@@ -1,7 +1,7 @@
 .canvas {
   width: 100vw;
   height: 80vh;
-  background-color: #ffcc00;
+  background-color: #f6d860;
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -15,12 +15,15 @@
 }
 
 .draggableItem {
-  width: 100px;
-  height: 100px;
-  background-color: #ffcc00;
+  width: 200px;
+  height: 200px;
+  background-color: #f6d860;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid blue;
+  text-align: center;
+  font-weight: 600;
+  border: 2px solid #3d4451;
+  color: #14110f;
   border-radius: 8px;
 }
