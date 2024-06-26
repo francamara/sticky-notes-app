@@ -11,8 +11,8 @@ interface StickyNote {
 
 const Canvas: React.FC = () => {
   const [items, setItems] = useState<StickyNote[]>([
-    { id: 'Note 1', x: 50, y: 50 },
-    { id: 'Note 2', x: 150, y: 150 },
+    { id: 'Hello! Welcome to Sticky Notes App!', x: 50, y: 50 },
+    { id: 'This app is currently in WIP, but thank you for visiting!', x: 150, y: 150 },
   ])
 
   const handleDragEnd = (event: DragEndEvent) => {
@@ -54,7 +54,7 @@ const Canvas: React.FC = () => {
             onChildClick={handleNoteClick}
             onChildEnter={handleKeyDown}
           >
-            <div className={styles.draggableItem}>Item {item.id}</div>
+            <div className={styles.draggableItem}>{item.id}</div>
           </Draggable>
         ))}
       </div>
