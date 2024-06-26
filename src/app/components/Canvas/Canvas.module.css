@@ -1,0 +1,26 @@
+.canvas {
+  width: 100vw;
+  height: 80vh;
+  background-color: #ffcc00;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light background color for the pegboard */
+  background-image: radial-gradient(#000 1px, transparent 1px); /* Black dots */
+  background-size: 20px 20px; /* Size of the grid pattern */
+}
+
+.draggableItem {
+  width: 100px;
+  height: 100px;
+  background-color: #ffcc00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+  border-radius: 8px;
+}
