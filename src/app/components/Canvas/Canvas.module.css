@@ -27,3 +27,13 @@
   color: #14110f;
   border-radius: 8px;
 }
+
+.addButton {
+  position: sticky;
+  bottom: 50px;
+  margin-left: 50px;
+}
+
+.rotatedButton {
+  transform: rotate(45deg);
+}
